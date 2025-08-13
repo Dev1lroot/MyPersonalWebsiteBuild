@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="he-IL">
+<head>
+  
+      <meta charset="UTF-8">
+
+<meta http-equiv="Content-Language" content="he-IL">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="דיוויד פון אייכנדורף - Software Developer, Refugee">
+<meta name="keywords" content="David, דיוויד פון אייכנדורף, Eichendorf, David Eichendorf, Software Developer, Refugee, Activist">
+<meta name="author" content="דיוויד פון אייכנדורף">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="דיוויד פון אייכנדורף">
+<meta property="og:description" content="דיוויד פון אייכנדורף - Software Developer, Refugee">
+<meta property="og:image" content="/assets/opengraph/placeholder.png">
+<meta property="og:url" content="">
+
+<meta name="twitter:card" content="/assets/opengraph/placeholder.png">
+<meta name="twitter:title" content="דיוויד פון אייכנדורף">
+<meta name="twitter:description" content="דיוויד פון אייכנדורף - Software Developer, Refugee">
+<meta name="twitter:image" content="/assets/opengraph/placeholder.png">
+<title>דיוויד פון אייכנדורף | תוכנת עורך MRTD ICAO-9303</title>
+<link rel="canonical" href="/he/projects/machine-readable-travel-document-editor/">
+
+<link rel="stylesheet" href="/assets/main.css">
+<link rel="stylesheet" href="/assets/fontawesome-free-6.6.0-web/css/all.min.css">
+
+
+  
+    <link rel="alternate" hreflang="en" href="/en/projects/machine-readable-travel-document-editor/">
+  
+
+  
+    <link rel="alternate" hreflang="es" href="/es/projects/machine-readable-travel-document-editor/">
+  
+
+  
+    <link rel="alternate" hreflang="fr" href="/fr/projects/machine-readable-travel-document-editor/">
+  
+
+  
+    <link rel="alternate" hreflang="de" href="/de/projects/machine-readable-travel-document-editor/">
+  
+
+  
+    <link rel="alternate" hreflang="ua" href="/ua/projects/machine-readable-travel-document-editor/">
+  
+
+  
+    <link rel="alternate" hreflang="ru" href="/ru/projects/machine-readable-travel-document-editor/">
+  
+
+  
+
+  
+    <link rel="alternate" hreflang="ar" href="/ar/projects/machine-readable-travel-document-editor/">
+  
+
+  
+    <link rel="alternate" hreflang="hi" href="/hi/projects/machine-readable-travel-document-editor/">
+  
+
+  
+    <link rel="alternate" hreflang="zh" href="/zh/projects/machine-readable-travel-document-editor/">
+  
+
+  
+    <link rel="alternate" hreflang="ko" href="/ko/projects/machine-readable-travel-document-editor/">
+  
+
+  
+    <link rel="alternate" hreflang="jp" href="/jp/projects/machine-readable-travel-document-editor/">
+  
+
+
+<script type="text/javascript" src="/assets/scripts/vue.global.js"></script>
+<script type="text/javascript" src="/assets/scripts/classes/Slideshow.js"></script>
+<script type="text/javascript" src="/assets/scripts/main.js" defer></script>
+<script type="text/javascript" src="/assets/scripts/background.js" defer></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  
+</head>
+<body>
+  <main>
+    <dialog v-if="dialogs.includes('languages')">
+    <div class="header">
+        <h2>Select Language</h2>
+        <button class="close" @click="closeDialog('languages')"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="languages">
+        
+        <a alt="English" href="/en/projects/machine-readable-travel-document-editor/">
+            <i style="background-image: url(/assets/flags/gb.svg)"></i>
+            <span>English</span>
+        </a>
+        
+        <a alt="Español" href="/es/projects/machine-readable-travel-document-editor/">
+            <i style="background-image: url(/assets/flags/es.svg)"></i>
+            <span>Español</span>
+        </a>
+        
+        <a alt="Français" href="/fr/projects/machine-readable-travel-document-editor/">
+            <i style="background-image: url(/assets/flags/fr.svg)"></i>
+            <span>Français</span>
+        </a>
+        
+        <a alt="Deutsch" href="/de/projects/machine-readable-travel-document-editor/">
+            <i style="background-image: url(/assets/flags/de.svg)"></i>
+            <span>Deutsch</span>
+        </a>
+        
+        <a alt="Українська" href="/ua/projects/machine-readable-travel-document-editor/">
+            <i style="background-image: url(/assets/flags/ua.svg)"></i>
+            <span>Українська</span>
+        </a>
+        
+        <a alt="Русский" href="/ru/projects/machine-readable-travel-document-editor/">
+            <i style="background-image: url(/assets/flags/ru.svg)"></i>
+            <span>Русский</span>
+        </a>
+        
+        <a alt="עִבְרִית" href="/he/projects/machine-readable-travel-document-editor/">
+            <i style="background-image: url(/assets/flags/il.svg)"></i>
+            <span>עִבְרִית</span>
+        </a>
+        
+        <a alt="العربية" href="/ar/projects/machine-readable-travel-document-editor/">
+            <i style="background-image: url(/assets/flags/ae.svg)"></i>
+            <span>العربية</span>
+        </a>
+        
+        <a alt="हिन्दी" href="/hi/projects/machine-readable-travel-document-editor/">
+            <i style="background-image: url(/assets/flags/in.svg)"></i>
+            <span>हिन्दी</span>
+        </a>
+        
+        <a alt="中文" href="/zh/projects/machine-readable-travel-document-editor/">
+            <i style="background-image: url(/assets/flags/cn.svg)"></i>
+            <span>中文</span>
+        </a>
+        
+        <a alt="한국어" href="/ko/projects/machine-readable-travel-document-editor/">
+            <i style="background-image: url(/assets/flags/kr.svg)"></i>
+            <span>한국어</span>
+        </a>
+        
+        <a alt="日本語" href="/jp/projects/machine-readable-travel-document-editor/">
+            <i style="background-image: url(/assets/flags/jp.svg)"></i>
+            <span>日本語</span>
+        </a>
+        
+    </div>            
+</dialog>
+    
+      <section class="page full-size article-page" id="page-wrapper">
+  <div class="header">
+    <a class="wayback" href="/he/"><i class="fas fa-arrow-left"></i> Back</a>
+    <a @click="openDialog('languages')" class="language-button">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      עִבְרִית
+      <i style="background-image: url(/assets/flags/il.svg);"></i>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</a>
+  </div>
+  <article>
+    <h2></h2>
+    <div class="content">
+      <h1>תוכנת עורך MRTD ICAO-9303</h1>
+<p>תוכנה לעיצוב ופיתוח מסמכי נסיעה לקריאה מכנית ICAO-9303</p>
+
+  <div class="options">
+    
+        <a class="option-link" href="/apps/mrtd-editor/"><i class="fa-solid fa-rocket"></i> Try Online</a>
+    
+        <a class="option-link" href="https://github.com/Dev1lroot/MRTDCAD"><i class="fa-brands fa-github"></i> Visit Project</a>
+    
+  </div>
+
+
+  <div class="screenshots">
+    
+        
+           <img src="/uploads/mrtd_editor/screenshots/01.png">
+        
+    
+  </div>
+
+    </div>
+  </article>
+</section>
+    
+  </main>
+  <canvas id="background" class="background"></canvas>
+</body>

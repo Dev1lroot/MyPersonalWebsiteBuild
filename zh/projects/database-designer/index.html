@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  
+      <meta charset="UTF-8">
+
+<meta http-equiv="Content-Language" content="zh-CN">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="大卫·冯·艾亨多夫 - Software Developer, Refugee">
+<meta name="keywords" content="David, 大卫·冯·艾亨多夫, Eichendorf, David Eichendorf, Software Developer, Refugee, Activist">
+<meta name="author" content="大卫·冯·艾亨多夫">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="大卫·冯·艾亨多夫">
+<meta property="og:description" content="大卫·冯·艾亨多夫 - Software Developer, Refugee">
+<meta property="og:image" content="/assets/opengraph/placeholder.png">
+<meta property="og:url" content="">
+
+<meta name="twitter:card" content="/assets/opengraph/placeholder.png">
+<meta name="twitter:title" content="大卫·冯·艾亨多夫">
+<meta name="twitter:description" content="大卫·冯·艾亨多夫 - Software Developer, Refugee">
+<meta name="twitter:image" content="/assets/opengraph/placeholder.png">
+<title>大卫·冯·艾亨多夫 | 关系型数据库设计器</title>
+<link rel="canonical" href="/zh/projects/database-designer/">
+
+<link rel="stylesheet" href="/assets/main.css">
+<link rel="stylesheet" href="/assets/fontawesome-free-6.6.0-web/css/all.min.css">
+
+
+  
+    <link rel="alternate" hreflang="en" href="/en/projects/database-designer/">
+  
+
+  
+    <link rel="alternate" hreflang="es" href="/es/projects/database-designer/">
+  
+
+  
+    <link rel="alternate" hreflang="fr" href="/fr/projects/database-designer/">
+  
+
+  
+    <link rel="alternate" hreflang="de" href="/de/projects/database-designer/">
+  
+
+  
+    <link rel="alternate" hreflang="ua" href="/ua/projects/database-designer/">
+  
+
+  
+    <link rel="alternate" hreflang="ru" href="/ru/projects/database-designer/">
+  
+
+  
+    <link rel="alternate" hreflang="he" href="/he/projects/database-designer/">
+  
+
+  
+    <link rel="alternate" hreflang="ar" href="/ar/projects/database-designer/">
+  
+
+  
+    <link rel="alternate" hreflang="hi" href="/hi/projects/database-designer/">
+  
+
+  
+
+  
+    <link rel="alternate" hreflang="ko" href="/ko/projects/database-designer/">
+  
+
+  
+    <link rel="alternate" hreflang="jp" href="/jp/projects/database-designer/">
+  
+
+
+<script type="text/javascript" src="/assets/scripts/vue.global.js"></script>
+<script type="text/javascript" src="/assets/scripts/classes/Slideshow.js"></script>
+<script type="text/javascript" src="/assets/scripts/main.js" defer></script>
+<script type="text/javascript" src="/assets/scripts/background.js" defer></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  
+</head>
+<body>
+  <main>
+    <dialog v-if="dialogs.includes('languages')">
+    <div class="header">
+        <h2>Select Language</h2>
+        <button class="close" @click="closeDialog('languages')"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="languages">
+        
+        <a alt="English" href="/en/projects/database-designer/">
+            <i style="background-image: url(/assets/flags/gb.svg)"></i>
+            <span>English</span>
+        </a>
+        
+        <a alt="Español" href="/es/projects/database-designer/">
+            <i style="background-image: url(/assets/flags/es.svg)"></i>
+            <span>Español</span>
+        </a>
+        
+        <a alt="Français" href="/fr/projects/database-designer/">
+            <i style="background-image: url(/assets/flags/fr.svg)"></i>
+            <span>Français</span>
+        </a>
+        
+        <a alt="Deutsch" href="/de/projects/database-designer/">
+            <i style="background-image: url(/assets/flags/de.svg)"></i>
+            <span>Deutsch</span>
+        </a>
+        
+        <a alt="Українська" href="/ua/projects/database-designer/">
+            <i style="background-image: url(/assets/flags/ua.svg)"></i>
+            <span>Українська</span>
+        </a>
+        
+        <a alt="Русский" href="/ru/projects/database-designer/">
+            <i style="background-image: url(/assets/flags/ru.svg)"></i>
+            <span>Русский</span>
+        </a>
+        
+        <a alt="עִבְרִית" href="/he/projects/database-designer/">
+            <i style="background-image: url(/assets/flags/il.svg)"></i>
+            <span>עִבְרִית</span>
+        </a>
+        
+        <a alt="العربية" href="/ar/projects/database-designer/">
+            <i style="background-image: url(/assets/flags/ae.svg)"></i>
+            <span>العربية</span>
+        </a>
+        
+        <a alt="हिन्दी" href="/hi/projects/database-designer/">
+            <i style="background-image: url(/assets/flags/in.svg)"></i>
+            <span>हिन्दी</span>
+        </a>
+        
+        <a alt="中文" href="/zh/projects/database-designer/">
+            <i style="background-image: url(/assets/flags/cn.svg)"></i>
+            <span>中文</span>
+        </a>
+        
+        <a alt="한국어" href="/ko/projects/database-designer/">
+            <i style="background-image: url(/assets/flags/kr.svg)"></i>
+            <span>한국어</span>
+        </a>
+        
+        <a alt="日本語" href="/jp/projects/database-designer/">
+            <i style="background-image: url(/assets/flags/jp.svg)"></i>
+            <span>日本語</span>
+        </a>
+        
+    </div>            
+</dialog>
+    
+      <section class="page full-size article-page" id="page-wrapper">
+  <div class="header">
+    <a class="wayback" href="/zh/"><i class="fas fa-arrow-left"></i> Back</a>
+    <a @click="openDialog('languages')" class="language-button">
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+      中文
+      <i style="background-image: url(/assets/flags/cn.svg);"></i>
+    
+  
+    
+  
+    
+  
+</a>
+  </div>
+  <article>
+    <h2></h2>
+    <div class="content">
+      <h1>关系型数据库设计器</h1>
+<p>关系型数据库的免费数据库设计器（目前仅支持innodb语法）</p>
+
+  <div class="options">
+    
+        <a class="option-link" href="/apps/dbdesigner/"><i class="fa-solid fa-rocket"></i> Try Online</a>
+    
+  </div>
+
+
+  <div class="screenshots">
+    
+        
+           <img src="/uploads/dbdesigner/01.png">
+        
+    
+  </div>
+
+    </div>
+  </article>
+</section>
+    
+  </main>
+  <canvas id="background" class="background"></canvas>
+</body>

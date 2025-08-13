@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="ja-JP">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="Content-Language" content="ja-JP">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content=" - Software Developer, Refugee">
+    <meta name="keywords" content="David, , Eichendorf, David Eichendorf, Software Developer, Refugee, Activist">
+    <meta name="author" content="">
+    <meta name="robots" content="index, follow">
+    
+    <meta property="og:title" content="">
+    <meta property="og:description" content=" - Software Developer, Refugee">
+    <meta property="og:image" content="/assets/opengraph/placeholder.png">
+    <meta property="og:url" content="[object Object]">
+    
+    <meta name="twitter:card" content="/assets/opengraph/placeholder.png">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content=" - Software Developer, Refugee">
+    <meta name="twitter:image" content="/assets/opengraph/placeholder.png">
+
+    <title> | Home</title>
+
+    <link rel="canonical" href="/ja/">
+    
+    <link rel="stylesheet" href="/assets/main.css">
+    <link rel="stylesheet" href="/assets/fontawesome-free-6.6.0-web/css/all.min.css">
+    
+    
+      <link rel="alternate" hreflang="en" href="/en/">
+    
+      <link rel="alternate" hreflang="es" href="/es/">
+    
+      <link rel="alternate" hreflang="fr" href="/fr/">
+    
+      <link rel="alternate" hreflang="de" href="/de/">
+    
+      <link rel="alternate" hreflang="ua" href="/ua/">
+    
+      <link rel="alternate" hreflang="ru" href="/ru/">
+    
+      <link rel="alternate" hreflang="he" href="/he/">
+    
+      <link rel="alternate" hreflang="ar" href="/ar/">
+    
+      <link rel="alternate" hreflang="hi" href="/hi/">
+    
+      <link rel="alternate" hreflang="zh" href="/zh/">
+    
+      <link rel="alternate" hreflang="ko" href="/ko/">
+    
+      <link rel="alternate" hreflang="ja" href="/ja/">
+    
+
+    <script type="text/javascript" src="/assets/scripts/vue.global.js"></script>
+    <script type="text/javascript" src="/assets/scripts/classes/Slideshow.js"></script>
+    <script type="text/javascript" src="/assets/scripts/main.js" defer></script>
+    <script type="text/javascript" src="/assets/scripts/background.js" defer></script>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+</head>
+<body>
+  <main>
+    <dialog v-if="dialogs.includes('languages')">
+    <div class="header">
+        <h2>Select Language</h2>
+        <button class="close" @click="closeDialog('languages')"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="languages">
+        
+        <a alt="English" href="/en/">
+            <i style="background-image: url(/assets/flags/gb.svg)"></i>
+            <span>English</span>
+        </a>
+        
+        <a alt="Español" href="/es/">
+            <i style="background-image: url(/assets/flags/es.svg)"></i>
+            <span>Español</span>
+        </a>
+        
+        <a alt="Français" href="/fr/">
+            <i style="background-image: url(/assets/flags/fr.svg)"></i>
+            <span>Français</span>
+        </a>
+        
+        <a alt="Deutsch" href="/de/">
+            <i style="background-image: url(/assets/flags/de.svg)"></i>
+            <span>Deutsch</span>
+        </a>
+        
+        <a alt="Українська" href="/ua/">
+            <i style="background-image: url(/assets/flags/ua.svg)"></i>
+            <span>Українська</span>
+        </a>
+        
+        <a alt="Русский" href="/ru/">
+            <i style="background-image: url(/assets/flags/ru.svg)"></i>
+            <span>Русский</span>
+        </a>
+        
+        <a alt="עִבְרִית" href="/he/">
+            <i style="background-image: url(/assets/flags/il.svg)"></i>
+            <span>עִבְרִית</span>
+        </a>
+        
+        <a alt="العربية" href="/ar/">
+            <i style="background-image: url(/assets/flags/ae.svg)"></i>
+            <span>العربية</span>
+        </a>
+        
+        <a alt="हिन्दी" href="/hi/">
+            <i style="background-image: url(/assets/flags/in.svg)"></i>
+            <span>हिन्दी</span>
+        </a>
+        
+        <a alt="中文" href="/zh/">
+            <i style="background-image: url(/assets/flags/cn.svg)"></i>
+            <span>中文</span>
+        </a>
+        
+        <a alt="한국어" href="/ko/">
+            <i style="background-image: url(/assets/flags/kr.svg)"></i>
+            <span>한국어</span>
+        </a>
+        
+        <a alt="日本語" href="/ja/">
+            <i style="background-image: url(/assets/flags/jp.svg)"></i>
+            <span>日本語</span>
+        </a>
+        
+    </div>            
+</dialog>
+    
+      <section class="menu">
+    <nav>
+        <a href="/downloads/cv.pdf" download="">
+          <i class="fa-solid fa-download"></i>
+          <span></span>
+        </a>
+        
+        <a :class="(page == '') ? 'active' : ''" @click="setPage('')">
+          <i class="fa-solid fa-house"></i>
+          <span></span>
+        </a>
+        
+        <a :class="(page == 'activity') ? 'active' : ''" @click="setPage('activity')">
+          <i class="fa-solid fa-person-running"></i>
+          <span></span>
+        </a>
+        
+        <a :class="(page == 'bio') ? 'active' : ''" @click="setPage('bio')">
+          <i class="fa-solid fa-book-skull"></i>
+          <span></span>
+        </a>
+        
+        <a :class="(page == 'projects') ? 'active' : ''" @click="setPage('projects')">
+          <i class="fa-solid fa-code-branch"></i>
+          <span></span>
+        </a>
+        
+        <a :class="(page == 'contact_me') ? 'active' : ''" @click="setPage('contact_me')">
+          <i class="fa-solid fa-envelope"></i>
+          <span></span>
+        </a>
+        
+    </nav>
+</section>
+    
+    
+      <section class="page" id="page-wrapper">
+    <div class="header">
+    <h1></h1>
+    <a @click="openDialog('languages')">
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+          日本語
+          <i style="background-image: url(/assets/flags/jp.svg);"></i>
+        
+      
+    </a>
+</div>
+    <div class="profile">
+    <img class="photo" src="/assets/images/me.png">
+    <div class="about"></div>
+</div>
+    <div class="socials">
+  
+    
+      <a href="https://x.com/DavyBoyAB" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+    
+  
+    
+      <a href="https://www.instagram.com/davyboyab/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    
+  
+    
+      <a href="https://ko-fi.com/davideichendorf" title="Ko-fi"><i class="fa-solid fa-mug-hot"></i></a>
+    
+  
+    
+      <a href="https://ngl.link/davyboyab" title="NGL"><i class="fa-solid fa-question"></i></a>
+    
+  
+    
+      <a href="https://www.linkedin.com/in/david-eichendorf-79aa7a25a/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    
+  
+    
+      <a href="https://github.com/dev1lroot" title="GitHub"><i class="fa-brands fa-github"></i></a>
+    
+  
+    
+      <a href="https://soundcloud.com/dev1lroot" title="SoundCloud"><i class="fa-brands fa-soundcloud"></i></a>
+    
+  
+    
+      <a href="https://www.youtube.com/channel/UCwqy0PbQfsVXCpuC-f6ROoQ" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    
+  
+    
+      <a href="https://sketchfab.com/dev1lroot" title="Sketchfab"><i class="fa-solid fa-cube"></i></a>
+    
+  
+    
+      <a href="https://www.deviantart.com/dev1lroot" title="DeviantArt"><i class="fa-brands fa-deviantart"></i></a>
+    
+  
+    
+      <a href="https://t.me/dev1lroot" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+    
+  
+    
+      <a href="https://steamcommunity.com/id/dev1lroot/" title="Steam"><i class="fa-brands fa-steam"></i></a>
+    
+  
+</div>
+    <div class="content">
+        <div class="feed" v-if="page == ''">
+          
+            
+          
+            
+          
+            
+          
+        </div>
+        <div class="feed" v-if="page == 'projects'">
+          
+            <article @click="viewProject(id)">
+                <h3>Russian Detention Simulator</h3>
+                <p>Russian Prison Simulator, based on my story of imprisonment, with my own prison cell</p>
+                <div class="keywords">
+                  
+                  <a href="https://google.com/?q=Unreal Engine 5">Unreal Engine 5</a>
+                  
+                  <a href="https://google.com/?q=Games">Games</a>
+                  
+                </div>
+            </article>
+          
+            <article @click="viewProject(id)">
+                <h3>Relational Database Designer</h3>
+                <p>Free Database Designer for relational databases (only innodb syntax is supported for now)</p>
+                <div class="keywords">
+                  
+                  <a href="https://google.com/?q=Web">Web</a>
+                  
+                </div>
+            </article>
+          
+            <article @click="viewProject(id)">
+                <h3>ICAO-9303 MRTD Editor Software</h3>
+                <p>ICAO-9303 Machine Readable Travel Documents designing and development software</p>
+                <div class="keywords">
+                  
+                  <a href="https://google.com/?q=Vue">Vue</a>
+                  
+                  <a href="https://google.com/?q=Javascript">Javascript</a>
+                  
+                  <a href="https://google.com/?q=Web">Web</a>
+                  
+                </div>
+            </article>
+          
+            <article @click="viewProject(id)">
+                <h3>Commandline Minesweeper Written in Nim Language</h3>
+                <p>A Minesweeper example written in Nim Language</p>
+                <div class="keywords">
+                  
+                  <a href="https://google.com/?q=Nim">Nim</a>
+                  
+                </div>
+            </article>
+          
+            <article @click="viewProject(id)">
+                <h3>RobCo Industries (TM) Termlink Emulator</h3>
+                <p>Fallout terminal emulator for fans</p>
+                <div class="keywords">
+                  
+                  <a href="https://google.com/?q=Nim">Nim</a>
+                  
+                </div>
+            </article>
+          
+        </div>
+        <div class="contact-form" v-if="page == 'contact_me'">
+            <input type="text" placeholder="Subject">
+            <input type="text" placeholder="Email address">
+            <textarea placeholder="Your message starts here.."></textarea>
+            <button></button>
+        </div>
+    </div>
+</section>
+    
+  </main>
+  <canvas id="background" class="background"></canvas>
+</body>
