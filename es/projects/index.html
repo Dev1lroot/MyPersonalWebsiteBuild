@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="es-ES">
+<head>
+  
+      <meta charset="UTF-8">
+
+<meta http-equiv="Content-Language" content="es-ES">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="David von Eichendorf - Software Developer, Refugee">
+<meta name="keywords" content="David, David von Eichendorf, Eichendorf, David Eichendorf, Software Developer, Refugee, Activist">
+<meta name="author" content="David von Eichendorf">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="David von Eichendorf">
+<meta property="og:description" content="David von Eichendorf - Software Developer, Refugee">
+<meta property="og:image" content="/assets/opengraph/placeholder.png">
+<meta property="og:url" content="[object Object]">
+
+<meta name="twitter:card" content="/assets/opengraph/placeholder.png">
+<meta name="twitter:title" content="David von Eichendorf">
+<meta name="twitter:description" content="David von Eichendorf - Software Developer, Refugee">
+<meta name="twitter:image" content="/assets/opengraph/placeholder.png">
+<title>David von Eichendorf | Proyectos</title>
+<link rel="canonical" href="/es/projects/">
+
+<link rel="stylesheet" href="/assets/main.css">
+<link rel="stylesheet" href="/assets/fontawesome-free-6.6.0-web/css/all.min.css">
+
+
+  
+    <link rel="alternate" hreflang="en" href="/en/projects/">
+  
+
+  
+
+  
+    <link rel="alternate" hreflang="fr" href="/fr/projects/">
+  
+
+  
+    <link rel="alternate" hreflang="de" href="/de/projects/">
+  
+
+  
+    <link rel="alternate" hreflang="ua" href="/ua/projects/">
+  
+
+  
+    <link rel="alternate" hreflang="ru" href="/ru/projects/">
+  
+
+  
+    <link rel="alternate" hreflang="he" href="/he/projects/">
+  
+
+  
+    <link rel="alternate" hreflang="ar" href="/ar/projects/">
+  
+
+  
+    <link rel="alternate" hreflang="hi" href="/hi/projects/">
+  
+
+  
+    <link rel="alternate" hreflang="zh" href="/zh/projects/">
+  
+
+  
+    <link rel="alternate" hreflang="ko" href="/ko/projects/">
+  
+
+  
+    <link rel="alternate" hreflang="jp" href="/jp/projects/">
+  
+
+
+<script type="text/javascript" >
+  const initial_page = "projects";
+</script>
+<script type="text/javascript" src="/assets/scripts/vue.min.js"></script>
+<script type="text/javascript" src="/assets/scripts/classes/Slideshow.js"></script>
+<script type="text/javascript" src="/assets/scripts/main.js" defer></script>
+<script type="text/javascript" src="/assets/scripts/background.js" defer></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  
+</head>
+<body>
+  <main>
+    <dialog v-if="dialogs.includes('languages')">
+    <div class="header">
+        <h2>Select Language</h2>
+        <button class="close" @click="closeDialog('languages')"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="languages">
+        
+        <a alt="English" href="/en/projects/">
+            <i style="background-image: url(/assets/flags/gb.svg)"></i>
+            <span>English</span>
+        </a>
+        
+        <a alt="Español" href="/es/projects/">
+            <i style="background-image: url(/assets/flags/es.svg)"></i>
+            <span>Español</span>
+        </a>
+        
+        <a alt="Français" href="/fr/projects/">
+            <i style="background-image: url(/assets/flags/fr.svg)"></i>
+            <span>Français</span>
+        </a>
+        
+        <a alt="Deutsch" href="/de/projects/">
+            <i style="background-image: url(/assets/flags/de.svg)"></i>
+            <span>Deutsch</span>
+        </a>
+        
+        <a alt="Українська" href="/ua/projects/">
+            <i style="background-image: url(/assets/flags/ua.svg)"></i>
+            <span>Українська</span>
+        </a>
+        
+        <a alt="Русский" href="/ru/projects/">
+            <i style="background-image: url(/assets/flags/ru.svg)"></i>
+            <span>Русский</span>
+        </a>
+        
+        <a alt="עִבְרִית" href="/he/projects/">
+            <i style="background-image: url(/assets/flags/il.svg)"></i>
+            <span>עִבְרִית</span>
+        </a>
+        
+        <a alt="العربية" href="/ar/projects/">
+            <i style="background-image: url(/assets/flags/ae.svg)"></i>
+            <span>العربية</span>
+        </a>
+        
+        <a alt="हिन्दी" href="/hi/projects/">
+            <i style="background-image: url(/assets/flags/in.svg)"></i>
+            <span>हिन्दी</span>
+        </a>
+        
+        <a alt="中文" href="/zh/projects/">
+            <i style="background-image: url(/assets/flags/cn.svg)"></i>
+            <span>中文</span>
+        </a>
+        
+        <a alt="한국어" href="/ko/projects/">
+            <i style="background-image: url(/assets/flags/kr.svg)"></i>
+            <span>한국어</span>
+        </a>
+        
+        <a alt="日本語" href="/jp/projects/">
+            <i style="background-image: url(/assets/flags/jp.svg)"></i>
+            <span>日本語</span>
+        </a>
+        
+    </div>            
+</dialog>
+    
+      
+          <section class="menu right-handed">
+    <nav>
+        <a href="/downloads/cv_es-ES.pdf" download="cv.pdf">
+          
+            <i class="fa-solid fa-download"></i>
+            <span>Descargar CV</span>
+          
+        </a>
+        
+        <a :class="(page == '') ? 'active' : ''" @click="setPage('es','')">
+          
+            <i class="fa-solid fa-house"></i>
+            <span>Inicio</span>
+          
+        </a>
+        
+        <a :class="(page == 'activity') ? 'active' : ''" @click="setPage('es','activity')">
+          
+            <i class="fa-solid fa-person-running"></i>
+            <span>Actividad</span>
+          
+        </a>
+        
+        <a :class="(page == 'bio') ? 'active' : ''" @click="setPage('es','bio')">
+          
+            <i class="fa-solid fa-book-skull"></i>
+            <span>Biografía</span>
+          
+        </a>
+        
+        <a :class="(page == 'projects') ? 'active' : ''" @click="setPage('es','projects')">
+          
+            <i class="fa-solid fa-code-branch"></i>
+            <span>Proyectos</span>
+          
+        </a>
+        
+        <a :class="(page == 'contact_me') ? 'active' : ''" @click="setPage('es','contact_me')">
+          
+            <i class="fa-solid fa-envelope"></i>
+            <span>Contáctame</span>
+          
+        </a>
+        
+    </nav>
+</section>
+          <section class="page" id="page-wrapper">
+    <div class="header right-handed">
+  
+    <h1>David von Eichendorf</h1>
+    <a @click="openDialog('languages')" class="language-button">
+  
+    
+  
+    
+      <span>Español</span>
+      <i style="background-image: url(/assets/flags/es.svg);"></i>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</a>
+  
+</div>
+    <div class="profile">
+    <img class="photo" src="/assets/images/me.png">
+    <div class="about">ABDL 🌈 | Gay 🏳️‍🌈 | Desarrollador de software ⚙️ | Refugiado 🇫🇷 | Fundador de Adultbaby.ru | Creador de SIZO-SIM | Apoyo a Ucrania 🇺🇦</div>
+</div>
+    <div class="socials">
+  
+    
+      <a href="https://x.com/DavyBoyAB" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+    
+  
+    
+      <a href="https://www.instagram.com/davyboyab/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    
+  
+    
+      <a href="https://ko-fi.com/davideichendorf" title="Ko-fi"><i class="fa-solid fa-mug-hot"></i></a>
+    
+  
+    
+      <a href="https://ngl.link/davyboyab" title="NGL"><i class="fa-solid fa-question"></i></a>
+    
+  
+    
+      <a href="https://www.linkedin.com/in/david-eichendorf-79aa7a25a/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    
+  
+    
+      <a href="https://github.com/dev1lroot" title="GitHub"><i class="fa-brands fa-github"></i></a>
+    
+  
+    
+      <a href="https://soundcloud.com/dev1lroot" title="SoundCloud"><i class="fa-brands fa-soundcloud"></i></a>
+    
+  
+    
+      <a href="https://www.youtube.com/channel/UCwqy0PbQfsVXCpuC-f6ROoQ" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    
+  
+    
+      <a href="https://sketchfab.com/dev1lroot" title="Sketchfab"><i class="fa-solid fa-cube"></i></a>
+    
+  
+    
+      <a href="https://www.deviantart.com/dev1lroot" title="DeviantArt"><i class="fa-brands fa-deviantart"></i></a>
+    
+  
+    
+      <a href="https://t.me/dev1lroot" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+    
+  
+    
+      <a href="https://steamcommunity.com/id/dev1lroot/" title="Steam"><i class="fa-brands fa-steam"></i></a>
+    
+  
+</div>
+    <div class="content right-handed">
+        <div class="feed" v-if="page == ''">
+          
+            
+          
+            
+          
+            
+          
+        </div>
+        <div class="feed" v-if="page == 'projects'">
+          
+            <article>
+                <h3><a href="/es/projects/russian-detention-simulator/">Simulador de Detención Rusa</a></h3>
+                <p>Simulador de prisión rusa, basado en mi historia de encarcelamiento, con mi propia celda</p>
+                <div class="keywords">
+                  
+                  <a href="https://google.com/?q=Unreal Engine 5">Unreal Engine 5</a>
+                  
+                  <a href="https://google.com/?q=Games">Games</a>
+                  
+                </div>
+            </article>
+          
+            <article>
+                <h3><a href="/es/projects/database-designer/">Diseñador de Bases de Datos Relacionales</a></h3>
+                <p>Diseñador de bases de datos gratuito para bases de datos relacionales (solo se admite la sintaxis innodb por ahora)</p>
+                <div class="keywords">
+                  
+                  <a href="https://google.com/?q=Web">Web</a>
+                  
+                </div>
+            </article>
+          
+            <article>
+                <h3><a href="/es/projects/machine-readable-travel-document-editor/">Software Editor de MRTD ICAO-9303</a></h3>
+                <p>Software para diseñar y desarrollar Documentos de Viaje Legibles por Máquina ICAO-9303</p>
+                <div class="keywords">
+                  
+                  <a href="https://google.com/?q=Vue">Vue</a>
+                  
+                  <a href="https://google.com/?q=Javascript">Javascript</a>
+                  
+                  <a href="https://google.com/?q=Web">Web</a>
+                  
+                </div>
+            </article>
+          
+            <article>
+                <h3><a href="/es/projects/command-line-mineswepper-on-nim/">Buscaminas en línea de comandos</a></h3>
+                <p>Un ejemplo de Buscaminas en línea de comandos escrito en el lenguaje de programación Nim</p>
+                <div class="keywords">
+                  
+                  <a href="https://google.com/?q=Nim">Nim</a>
+                  
+                </div>
+            </article>
+          
+            <article>
+                <h3><a href="/es/projects/fallout-like-termlink-emulator/">Emulador Termlink</a></h3>
+                <p>Emulador CLI de TermLink de RobCo Industries (TM) de la serie Fallout. Creado por un fan para fans. Incluye hacking y mapeo de menús personalizado. Todas las marcas de Fallout pertenecen a Bethesda Softworks. Este software es no oficial y no está afiliado a Bethesda.</p>
+                <div class="keywords">
+                  
+                  <a href="https://google.com/?q=Nim">Nim</a>
+                  
+                </div>
+            </article>
+          
+        </div>
+        <div class="contact-form" v-if="page == 'contact_me'">
+            <input type="text" placeholder="Subject">
+            <input type="text" placeholder="Email address">
+            <textarea placeholder="Your message starts here.."></textarea>
+            <button>Enviar</button>
+        </div>
+    </div>
+</section>
+      
+    
+  </main>
+  <canvas id="background" class="background"></canvas>
+</body>

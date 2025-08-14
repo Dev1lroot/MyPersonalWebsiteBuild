@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="fr-FR">
+<head>
+  
+      <meta charset="UTF-8">
+
+<meta http-equiv="Content-Language" content="fr-FR">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="David von Eichendorf - Software Developer, Refugee">
+<meta name="keywords" content="David, David von Eichendorf, Eichendorf, David Eichendorf, Software Developer, Refugee, Activist">
+<meta name="author" content="David von Eichendorf">
+<meta name="robots" content="index, follow">
+
+<meta property="og:title" content="David von Eichendorf">
+<meta property="og:description" content="David von Eichendorf - Software Developer, Refugee">
+<meta property="og:image" content="/assets/opengraph/placeholder.png">
+<meta property="og:url" content="[object Object]">
+
+<meta name="twitter:card" content="/assets/opengraph/placeholder.png">
+<meta name="twitter:title" content="David von Eichendorf">
+<meta name="twitter:description" content="David von Eichendorf - Software Developer, Refugee">
+<meta name="twitter:image" content="/assets/opengraph/placeholder.png">
+<title>David von Eichendorf | Bio</title>
+<link rel="canonical" href="/fr/bio/">
+
+<link rel="stylesheet" href="/assets/main.css">
+<link rel="stylesheet" href="/assets/fontawesome-free-6.6.0-web/css/all.min.css">
+
+
+  
+    <link rel="alternate" hreflang="en" href="/en/bio/">
+  
+
+  
+    <link rel="alternate" hreflang="es" href="/es/bio/">
+  
+
+  
+
+  
+    <link rel="alternate" hreflang="de" href="/de/bio/">
+  
+
+  
+    <link rel="alternate" hreflang="ua" href="/ua/bio/">
+  
+
+  
+    <link rel="alternate" hreflang="ru" href="/ru/bio/">
+  
+
+  
+    <link rel="alternate" hreflang="he" href="/he/bio/">
+  
+
+  
+    <link rel="alternate" hreflang="ar" href="/ar/bio/">
+  
+
+  
+    <link rel="alternate" hreflang="hi" href="/hi/bio/">
+  
+
+  
+    <link rel="alternate" hreflang="zh" href="/zh/bio/">
+  
+
+  
+    <link rel="alternate" hreflang="ko" href="/ko/bio/">
+  
+
+  
+    <link rel="alternate" hreflang="jp" href="/jp/bio/">
+  
+
+
+<script type="text/javascript" >
+  const initial_page = "bio";
+</script>
+<script type="text/javascript" src="/assets/scripts/vue.min.js"></script>
+<script type="text/javascript" src="/assets/scripts/classes/Slideshow.js"></script>
+<script type="text/javascript" src="/assets/scripts/main.js" defer></script>
+<script type="text/javascript" src="/assets/scripts/background.js" defer></script>
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  
+</head>
+<body>
+  <main>
+    <dialog v-if="dialogs.includes('languages')">
+    <div class="header">
+        <h2>Select Language</h2>
+        <button class="close" @click="closeDialog('languages')"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+    <div class="languages">
+        
+        <a alt="English" href="/en/bio/">
+            <i style="background-image: url(/assets/flags/gb.svg)"></i>
+            <span>English</span>
+        </a>
+        
+        <a alt="Español" href="/es/bio/">
+            <i style="background-image: url(/assets/flags/es.svg)"></i>
+            <span>Español</span>
+        </a>
+        
+        <a alt="Français" href="/fr/bio/">
+            <i style="background-image: url(/assets/flags/fr.svg)"></i>
+            <span>Français</span>
+        </a>
+        
+        <a alt="Deutsch" href="/de/bio/">
+            <i style="background-image: url(/assets/flags/de.svg)"></i>
+            <span>Deutsch</span>
+        </a>
+        
+        <a alt="Українська" href="/ua/bio/">
+            <i style="background-image: url(/assets/flags/ua.svg)"></i>
+            <span>Українська</span>
+        </a>
+        
+        <a alt="Русский" href="/ru/bio/">
+            <i style="background-image: url(/assets/flags/ru.svg)"></i>
+            <span>Русский</span>
+        </a>
+        
+        <a alt="עִבְרִית" href="/he/bio/">
+            <i style="background-image: url(/assets/flags/il.svg)"></i>
+            <span>עִבְרִית</span>
+        </a>
+        
+        <a alt="العربية" href="/ar/bio/">
+            <i style="background-image: url(/assets/flags/ae.svg)"></i>
+            <span>العربية</span>
+        </a>
+        
+        <a alt="हिन्दी" href="/hi/bio/">
+            <i style="background-image: url(/assets/flags/in.svg)"></i>
+            <span>हिन्दी</span>
+        </a>
+        
+        <a alt="中文" href="/zh/bio/">
+            <i style="background-image: url(/assets/flags/cn.svg)"></i>
+            <span>中文</span>
+        </a>
+        
+        <a alt="한국어" href="/ko/bio/">
+            <i style="background-image: url(/assets/flags/kr.svg)"></i>
+            <span>한국어</span>
+        </a>
+        
+        <a alt="日本語" href="/jp/bio/">
+            <i style="background-image: url(/assets/flags/jp.svg)"></i>
+            <span>日本語</span>
+        </a>
+        
+    </div>            
+</dialog>
+    
+      
+          <section class="menu right-handed">
+    <nav>
+        <a href="/downloads/cv_fr-FR.pdf" download="cv.pdf">
+          
+            <i class="fa-solid fa-download"></i>
+            <span>Télécharger CV</span>
+          
+        </a>
+        
+        <a :class="(page == '') ? 'active' : ''" @click="setPage('fr','')">
+          
+            <i class="fa-solid fa-house"></i>
+            <span>Accueil</span>
+          
+        </a>
+        
+        <a :class="(page == 'activity') ? 'active' : ''" @click="setPage('fr','activity')">
+          
+            <i class="fa-solid fa-person-running"></i>
+            <span>Activité</span>
+          
+        </a>
+        
+        <a :class="(page == 'bio') ? 'active' : ''" @click="setPage('fr','bio')">
+          
+            <i class="fa-solid fa-book-skull"></i>
+            <span>Bio</span>
+          
+        </a>
+        
+        <a :class="(page == 'projects') ? 'active' : ''" @click="setPage('fr','projects')">
+          
+            <i class="fa-solid fa-code-branch"></i>
+            <span>Projets</span>
+          
+        </a>
+        
+        <a :class="(page == 'contact_me') ? 'active' : ''" @click="setPage('fr','contact_me')">
+          
+            <i class="fa-solid fa-envelope"></i>
+            <span>Me contacter</span>
+          
+        </a>
+        
+    </nav>
+</section>
+          <section class="page" id="page-wrapper">
+    <div class="header right-handed">
+  
+    <h1>David von Eichendorf</h1>
+    <a @click="openDialog('languages')" class="language-button">
+  
+    
+  
+    
+  
+    
+      <span>Français</span>
+      <i style="background-image: url(/assets/flags/fr.svg);"></i>
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+</a>
+  
+</div>
+    <div class="profile">
+    <img class="photo" src="/assets/images/me.png">
+    <div class="about">ABDL 🌈 | Gay 🏳️‍🌈 | Programmeur ⚙️ | Réfugié en 🇫🇷 | Fondateur d&#39;Adultbaby.ru | Créateur de SIZO-SIM | Né en 🇷🇺 | Soutien à l&#39;Ukraine 🇺🇦</div>
+</div>
+    <div class="socials">
+  
+    
+      <a href="https://x.com/DavyBoyAB" title="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+    
+  
+    
+      <a href="https://www.instagram.com/davyboyab/" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+    
+  
+    
+      <a href="https://ko-fi.com/davideichendorf" title="Ko-fi"><i class="fa-solid fa-mug-hot"></i></a>
+    
+  
+    
+      <a href="https://ngl.link/davyboyab" title="NGL"><i class="fa-solid fa-question"></i></a>
+    
+  
+    
+      <a href="https://www.linkedin.com/in/david-eichendorf-79aa7a25a/" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+    
+  
+    
+      <a href="https://github.com/dev1lroot" title="GitHub"><i class="fa-brands fa-github"></i></a>
+    
+  
+    
+      <a href="https://soundcloud.com/dev1lroot" title="SoundCloud"><i class="fa-brands fa-soundcloud"></i></a>
+    
+  
+    
+      <a href="https://www.youtube.com/channel/UCwqy0PbQfsVXCpuC-f6ROoQ" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+    
+  
+    
+      <a href="https://sketchfab.com/dev1lroot" title="Sketchfab"><i class="fa-solid fa-cube"></i></a>
+    
+  
+    
+      <a href="https://www.deviantart.com/dev1lroot" title="DeviantArt"><i class="fa-brands fa-deviantart"></i></a>
+    
+  
+    
+      <a href="https://t.me/dev1lroot" title="Telegram"><i class="fa-brands fa-telegram"></i></a>
+    
+  
+    
+      <a href="https://steamcommunity.com/id/dev1lroot/" title="Steam"><i class="fa-brands fa-steam"></i></a>
+    
+  
+</div>
+    <div class="content right-handed">
+        <div class="feed" v-if="page == ''">
+          
+            
+          
+            
+              <article class="post">
+                  <p>En tant que réfugié de Russie, j’appelle les soi-disant gouvernements occidentaux, l’Union européenne, le Canada et d’autres sociétés démocratiques à prendre en compte une réalité alarmante : les médias pro-russes financés par des oligarques et l’État continuent d’opérer librement en Europe et en Amérique, diffusant propagande et désinformation. Pendant ce temps, tout journaliste tentant de s’exprimer librement en Russie s’expose à l’emprisonnement, à la torture ou même à la mort. Permettre à de tels médias d’avoir une voix ici, alors que leur gouvernement réprime toute dissidence chez eux, constitue une trahison des valeurs qui définissent les sociétés libres.
+<br><br>
+La liberté d’expression doit fonctionner dans les deux sens. Lorsque le gouvernement russe ignore ouvertement les accords publics, comme le respect des droits humains, nous devons réévaluer les libertés que nous accordons à ses partisans sur notre territoire. Accorder aux médias pro-russes les libertés que leur propre pays refuse à ses citoyens sape nos principes et notre sécurité.
+<br><br>
+En tant que sociétés fondées sur les valeurs de la liberté d’expression, de la pensée libre et de l’accès à l’information, nous devons nous assurer que ces libertés sont respectées mutuellement. Nous limitons les droits des individus qui franchissent les limites éthiques et légales ; c’est pourquoi nous avons un système judiciaire. Pourtant, nous hésitons à appliquer les mêmes restrictions à un État terroriste qui méprise les droits humains fondamentaux, sape notre stabilité sociale et, par le biais de ses services de renseignement, commet des actes violents même dans des nations libres. De l’incident tragique de Skripal à de nombreux autres exemples, la menace est claire.
+<br><br>
+Pour ceux d’entre nous qui ont fui la persécution, il est dévastateur de constater la tolérance de l’Occident envers des forces qui piétinent les libertés fondamentales. Cela ressemble à une re-légitimation d’atrocités historiques devant les personnes mêmes qui en ont souffert. Tout comme réhumaniser l’Holocauste serait une offense aux communautés juives du monde entier, tolérer la propagande pro-russe dans des sociétés libres constitue une offense pour ceux d’entre nous qui ont subi l’oppression sanctionnée par l’État.
+<br><br>
+La complicité de la Russie avec les mouvements d’extrême droite en Europe et en Amérique est aussi hypocrite qu’alarmante. Alors que le Kremlin prétend être en croisade contre les soi-disant « nazis » en Ukraine, il courtise avec empressement des alliés néo-fascistes et ultranationalistes à l’étranger. Cet alignement pervers souligne une vérité inquiétante : l’idéologie politique russe contemporaine est un terreau pour des politiques xénophobes et racistes, souvent en accord direct avec les principes fondamentaux de ces groupes d’extrême droite.
+<br><br>
+En Europe et aux États-Unis, ces factions d’extrême droite, défendant des agendas anti-immigrés et anti-LGBT, reprennent régulièrement des propos tenus par les dirigeants russes. Il n’est pas secret que les politiques intérieures de la Russie sont notoirement répressives, notamment envers les personnes LGBTQ+ et certaines communautés religieuses minoritaires. Le racisme sous couvert de « protection des emplois » et la xénophobie sous couvert de protection des soi-disant « valeurs traditionnelles et familiales » sont normalisés et même gravés dans la loi. Les groupes d’extrême droite en Occident regardent la Russie comme un modèle pour « reprendre » leurs pays à ce qu’ils appellent la « pourriture libérale ». Cette synergie dangereuse dépasse les paroles ; elle érode activement les valeurs démocratiques et alimente l’autoritarisme des deux côtés.
+<br><br>
+Les similitudes entre les programmes d’extrême droite en Occident et le nationalisme russe sont stupéfiantes. La Russie et les dirigeants d’extrême droite occidentaux partagent une vision glaçante de la société : dépourvue de diversité, imprégnée d’intolérance et contrôlée par un pouvoir autoritaire. En s’alignant sur le Kremlin, les mouvements d’extrême droite occidentaux approuvent de fait les politiques répressives de la Russie, conférant une crédibilité à un régime qui réduit régulièrement au silence toute dissidence et impose une stricte conformité sociale.
+<br><br>
+Cette admiration croissante pour des valeurs répressives menace de ramener le monde occidental à une époque où le totalitarisme régnait et où la liberté était un concept étranger. Les valeurs de tolérance, de diversité et de droits humains – piliers de la démocratie libérale – sont désormais en danger. En embrassant la Russie, l’extrême droite cautionne tacitement un ordre mondial qui marginalise les plus vulnérables et criminalise la différence. Cette alliance ne se contente pas de saper les valeurs occidentales ; elle les empoisonne activement, rendant les organisations et traités internationaux inefficaces.
+<br><br>
+Dans plusieurs pays occidentaux, y compris certains États membres de l’Union européenne, certains dirigeants politiques, tels que Viktor Orbán, auraient été impliqués, selon de nombreuses enquêtes journalistiques indépendantes et rapports analytiques, dans des affaires de corruption et maintiendraient des liens étroits avec les intérêts russes. Ces politiciens ont été vus en train de saper activement les décisions stratégiques au sein d’institutions comme l’UE et l’OTAN. De telles actions semblent souvent trahir les valeurs mêmes que ces instances ont été créées pour protéger.
+<br><br>
+Ces personnalités bloquent fréquemment des initiatives cruciales, notamment lorsque celles-ci contredisent les intérêts russes : empêcher l’adhésion de l’Ukraine, de la Moldavie et de la Géorgie à l’OTAN à des moments critiques, saboter l’aide militaire ou retarder les processus d’adhésion à l’UE. Leurs actions ne sont pas isolées ; elles reflètent un agenda plus large visant à affaiblir ces alliances de l’intérieur, en alignant leurs intérêts sur ceux de la Russie plutôt que sur les principes démocratiques.
+<br><br>
+Cette manipulation crée un précédent dangereux, affaiblissant l’unité et compromettant la stabilité et la sécurité que ces institutions sont censées protéger.</p>
+                  <p class="post-date"><b v-html="new Date(0).toLocaleDateString()"></b></p>
+              </article>
+            
+          
+            
+              <article class="post">
+                  <p><h2>Préoccupation concernant la vérification de l'âge en France</h2>
+<br>
+<p>Je suis extrêmement préoccupé par les projets de mise en place d'un système de vérification de l'âge en France. Ces mesures ont déjà été critiquées par de grandes plateformes, y compris PornHub. Le principe de double anonymat annoncé par le gouvernement ne fonctionne pas en pratique et ne pourra jamais fonctionner techniquement.</p>
+<br>
+<p>Le modèle actuel est basé sur le schéma "service → tiers → utilisateur". Le problème est que le tiers a accès aux données du service qui demande la vérification ainsi qu'aux données de l'utilisateur qui est obligé de les fournir. Cela crée un potentiel illimité pour le commerce illégal ou la fuite d'informations personnelles.</p>
+<br>
+<p>Les services comme Yoti sont particulièrement dangereux, car ils nécessitent une vérification avec des documents réels, incluant des numéros et d'autres données sensibles. Ces informations peuvent être utilisées par des acteurs malveillants pour se faire passer pour quelqu'un d'autre sur des plateformes financières ou autres, mettant en danger les détenteurs des documents.</p>
+<br>
+<p>De plus, le tiers peut effectivement informer l'État sur qui a consulté quoi et quand. Autrement dit, le double anonymat est inexistant de facto.</p>
+<br>
+<p>Les raisons sont simples : tous les services de vérification de l'âge sont payants, et ils savent toujours pour qui ils effectuent la vérification, via la clé API fournie par le service qui paie. La vérification des documents utilise souvent les API des institutions publiques, ce qui permet à l'État de suivre chaque vérification.</p>
+<br><br>
+<h3>Solution proposée</h3>
+<br><br>
+<p>Le gouvernement devrait émettre un document numérique anonyme contenant uniquement la photo et l'âge, avec une signature numérique. Les services de vérification devraient être obligés d'accepter uniquement ce type de document, qui ne confirmerait que l'âge.</p>
+<br>
+<p>La vérification de l'authenticité du document devrait se faire selon le principe de la clé publique. Ainsi, le tiers pourrait vérifier la signature numérique hors ligne en utilisant la clé publique diffusée par l'État, éliminant la possibilité de suivi par le gouvernement et garantissant l'anonymat des utilisateurs.</p>
+</p>
+                  <p class="post-date"><b v-html="new Date(0).toLocaleDateString()"></b></p>
+              </article>
+            
+          
+        </div>
+        <div class="feed" v-if="page == 'projects'">
+          
+            <article>
+                <h3><a href="/fr/projects/russian-detention-simulator/">Simulateur de Détention Russe</a></h3>
+                <p>Simulateur de prison russe, basé sur mon histoire d&#39;emprisonnement, avec ma propre cellule</p>
+                <div class="keywords">
+                  
+                  <a href="https://google.com/?q=Unreal Engine 5">Unreal Engine 5</a>
+                  
+                  <a href="https://google.com/?q=Games">Games</a>
+                  
+                </div>
+            </article>
+          
+            <article>
+                <h3><a href="/fr/projects/database-designer/">Concepteur de Bases de Données Relationnelles</a></h3>
+                <p>Concepteur de base de données gratuit pour bases relationnelles (seule la syntaxe innodb est prise en charge pour le moment)</p>
+                <div class="keywords">
+                  
+                  <a href="https://google.com/?q=Web">Web</a>
+                  
+                </div>
+            </article>
+          
+            <article>
+                <h3><a href="/fr/projects/machine-readable-travel-document-editor/">Logiciel Éditeur MRTD ICAO-9303</a></h3>
+                <p>Logiciel de conception et développement de Documents de Voyage Lisibles par Machine ICAO-9303</p>
+                <div class="keywords">
+                  
+                  <a href="https://google.com/?q=Vue">Vue</a>
+                  
+                  <a href="https://google.com/?q=Javascript">Javascript</a>
+                  
+                  <a href="https://google.com/?q=Web">Web</a>
+                  
+                </div>
+            </article>
+          
+            <article>
+                <h3><a href="/fr/projects/command-line-mineswepper-on-nim/">Démineur en ligne de commande</a></h3>
+                <p>Un exemple de Démineur en ligne de commande écrit en langage de programmation Nim</p>
+                <div class="keywords">
+                  
+                  <a href="https://google.com/?q=Nim">Nim</a>
+                  
+                </div>
+            </article>
+          
+            <article>
+                <h3><a href="/fr/projects/fallout-like-termlink-emulator/">Émulateur Termlink</a></h3>
+                <p>Émulateur CLI de TermLink de RobCo Industries (TM) de la série Fallout. Créé par un fan pour les fans. Comprend le piratage et la personnalisation des menus. Toutes les marques Fallout appartiennent à Bethesda Softworks. Ce logiciel est non officiel et n&#39;a aucun lien avec Bethesda.</p>
+                <div class="keywords">
+                  
+                  <a href="https://google.com/?q=Nim">Nim</a>
+                  
+                </div>
+            </article>
+          
+        </div>
+        <div class="contact-form" v-if="page == 'contact_me'">
+            <input type="text" placeholder="Subject">
+            <input type="text" placeholder="Email address">
+            <textarea placeholder="Your message starts here.."></textarea>
+            <button>Envoyer</button>
+        </div>
+    </div>
+</section>
+      
+    
+  </main>
+  <canvas id="background" class="background"></canvas>
+</body>
